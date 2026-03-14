@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Example</title>
+
+<style>
+
+/* Universal Selector */
+*{
+    font-family: Arial;
+}
+
+/* Element Selector */
+h1{
+    color: blue;
+}
+
+/* Class Selector */
+.box{
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* ID Selector */
+#special{
+    color: red;
+}
+
+/* Group Selector */
+h2, p{
+    color: green;
+}
+
+/* Descendant Selector */
+div p{
+    font-style: italic;
+}
+
+/* Hover Selector */
+button:hover{
+    background-color: yellow;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>CSS Selectors Example</h1>
+
+<h2>Group Selector Example</h2>
+
+<p>This paragraph uses group selector styling.</p>
+
+<div class="box">
+<p>This paragraph is inside a div (descendant selector).</p>
+</div>
+
+<p id="special">This paragraph uses ID selector.</p>
+
+<button>Hover Over Me</button>
+
+</body>
+</html>
