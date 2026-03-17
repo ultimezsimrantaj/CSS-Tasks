@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navigation and Overflow</title>
+
+<style>
+
+/* ---------- HORIZONTAL MENU ---------- */
+.horizontal-menu{
+    background:#333;
+    padding:10px;
+}
+
+.horizontal-menu a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    display:inline;
+}
+
+/* ---------- VERTICAL MENU ---------- */
+.vertical-menu{
+    width:150px;
+}
+
+.vertical-menu a{
+    display:block;
+    background:#ddd;
+    padding:10px;
+    margin:2px;
+    text-decoration:none;
+}
+
+/* ---------- DROPDOWN MENU ---------- */
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#f1f1f1;
+    min-width:120px;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ---------- RESPONSIVE MENU ---------- */
+.responsive{
+    background:#444;
+    color:white;
+    padding:10px;
+}
+
+@media(max-width:600px){
+    .horizontal-menu a{
+        display:block;
+    }
+}
+
+/* ---------- OVERFLOW CONTAINER ---------- */
+.box{
+    width:200px;
+    height:100px;
+    border:2px solid black;
+    overflow:auto;
+}
+
+/* ---------- OVERFLOW TEXT ---------- */
+.text{
+    width:200px;
+    height:60px;
+    border:1px solid red;
+    overflow:hidden;
+}
+
+/* ---------- OVERFLOW IMAGE ---------- */
+.image-box{
+    width:200px;
+    height:120px;
+    overflow:auto;
+}
+
+.image-box img{
+    width:300px;
+}
+
+/* ---------- SCROLLABLE DROPDOWN ---------- */
+.scroll-dropdown{
+    height:80px;
+    overflow:auto;
+    border:1px solid black;
+}
+
+/* ---------- DISPLAY TYPES ---------- */
+.block{
+    display:block;
+    background:lightblue;
+    margin:5px;
+}
+
+.inline{
+    display:inline;
+    background:yellow;
+}
+
+.inline-block{
+    display:inline-block;
+    background:lightgreen;
+    width:100px;
+    height:50px;
+    margin:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Horizontal Menu</h2>
+<div class="horizontal-menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+
+<h2>Vertical Menu</h2>
+<div class="vertical-menu">
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+
+<h2>Dropdown Menu</h2>
+<div class="dropdown">
+<button>Menu</button>
+<div class="dropdown-content">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+</div>
+</div>
+
+<h2>Overflow Container</h2>
+<div class="box">
+This is some long content that will overflow the container. Scroll to see more content inside this box.
+</div>
+
+<h2>Overflow Text</h2>
+<div class="text">
+This is a long text that will be hidden because of overflow property.
+</div>
+
+<h2>Overflow Image</h2>
+<div class="image-box">
+<img src="..\HTML\image.png" alt="Overflow Image">
+</div>
+
+<h2>Scrollable Dropdown</h2>
+<div class="scroll-dropdown">
+<p>Item 1</p>
+<p>Item 2</p>
+<p>Item 3</p>
+<p>Item 4</p>
+<p>Item 5</p>
+</div>
+
+<h2>Display Types</h2>
+
+<div class="block">Block Element</div>
+
+<span class="inline">Inline Element</span>
+<span class="inline">Inline Element</span>
+
+<div class="inline-block">Inline-Block</div>
+<div class="inline-block">Inline-Block</div>
+
+</body>
+</html>
